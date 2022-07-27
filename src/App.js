@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Shop from "./components/Shop";
 import Header from "./components/Header";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, HashRouter } from "react-router-dom";
 import Basket from "./components/Basket";
 function App() {
   let disclaimer = useRef();
@@ -29,7 +29,7 @@ function App() {
       </div>
       <Header />
       <Routes>
-        <Route path="/" element={<Shop />} />
+        <Route exact path="/shop" element={<Shop />} />
         <Route path="/basket" element={<Basket />} />
       </Routes>
     </div>
