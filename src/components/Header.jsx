@@ -11,6 +11,7 @@ function Header() {
   return (
     <div className="header">
       <Link className="nav_link" to="/">Shop</Link>
+      
       <Link className="nav_link" to="basket">
         basket 
         <svg

@@ -353,7 +353,7 @@ body {
   color: #458f30;
 }
 
-.basket-descr{
+.basket-descr {
   display: flex;
   justify-content: right;
   background-color: #222;
@@ -361,21 +361,25 @@ body {
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
-  
+
 }
 
-.desc-full-price{
-  margin-right:105px;
+.desc-full-price {
+  margin-right: 105px;
 }
-.desc-count{
-  margin-right:135px;
+
+.desc-count {
+  margin-right: 135px;
 }
-.desc-price{
-  margin-right:80px;
+
+.desc-price {
+  margin-right: 80px;
 }
-.desc-title{
+
+.desc-title {
   margin-right: 300px;
 }
+
 .basket-block {
   max-width: 1000px;
   width: 100%;
@@ -385,13 +389,15 @@ body {
   height: 600px;
 
 }
-.basket-count{
+
+.basket-count {
   display: inline-block;
   background-color: red;
   margin-left: 10px;
   border-radius: 50%;
   width: 20px;
 }
+
 .basket-item {
   display: flex;
   align-items: center;
@@ -466,7 +472,8 @@ body {
   cursor: pointer;
   user-select: none;
 }
-.basket-footer{
+
+.basket-footer {
   max-width: 1000px;
   width: 100%;
   display: flex;
@@ -475,7 +482,8 @@ body {
   align-items: center;
   font-weight: 700;
 }
-.basket-footer button{
+
+.basket-footer button {
   height: 40px;
   width: 200px;
   cursor: pointer;
@@ -486,17 +494,40 @@ body {
   font-size: 20px;
   color: white;
 }
-.footer-total-price{
+
+.footer-total-price {
   font-size: 40px;
 }
-.basket-footer button:hover{
+
+.basket-footer button:hover {
   border: 2px solid black;
 }
-.checkout{
-  background-color: #2f2fa2!important;
+
+.checkout {
+  background-color: #2f2fa2 !important;
 }
-.empty{
+
+.empty {
   font-size: 50px;
   text-align: center;
   margin-top: 50px;
+}
+
+.disclaimer {
+  background-color: white;
+  position: absolute;
+  top: -55px;
+  z-index: 1001;
+  transition: .4s;
+}
+
+.toggle_disclaimer {
+  position: relative;
+  top: 20px;
+  width: 100px;
+  left: calc(50% - 50px);
+}
+
+.disclaimer.active {
+  top: 0;
 }
