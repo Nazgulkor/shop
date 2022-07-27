@@ -11,6 +11,14 @@ function Item({ clothes, currentMinValue, currentMaxValue, infoPopup }) {
     }
   })
 
+  let setDisabled = (id) => {
+    for(let i of basketItems){
+      if(i.id === id){
+        return 'disabled'
+      } 
+    }
+  }
+
 
   if (!clothes.length) {
     return (
@@ -42,8 +50,9 @@ function Item({ clothes, currentMinValue, currentMaxValue, infoPopup }) {
                     More info
                   </button>
                   <button
-                    className={`add-to-basket ${basketItems.includes(item) ? 'disabled' : ''}`}
+                    className={`add-to-basket ${setDisabled(item.id)}`}
                     onClick={() => {
+                      item.count = 1
                       dispatch(setItemToBasket(item))
                     }}
                   >

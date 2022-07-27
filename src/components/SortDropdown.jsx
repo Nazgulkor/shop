@@ -47,7 +47,7 @@ function SortDropdown() {
     <div className="select-block">
         <label className="select-label">Sort by: </label>
         <select className="select-css" value={value} onChange={onSelectValue}>
-            {options.map((item, index) => <option value={item.value}>{item.label}</option>)}
+            {options.map((item, index) => <option value={item.value} key={index} >{item.label}</option>)}
         </select>
     </div>
   );

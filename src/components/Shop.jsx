@@ -59,7 +59,7 @@ function Shop() {
   let infoPopup = createRef();
 
   return (
-    <div>
+    <div className="shop">
       <InfoPopup ref={infoPopup} />
 
       <FilterSystem />
